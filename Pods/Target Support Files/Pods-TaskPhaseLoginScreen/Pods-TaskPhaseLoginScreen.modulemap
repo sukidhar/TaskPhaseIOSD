@@ -1,0 +1,6 @@
+framework module Pods_TaskPhaseLoginScreen {
+  umbrella header "Pods-TaskPhaseLoginScreen-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -13,18 +13,26 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        let containView = UIView(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
+        let imageview = UIImageView(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
+        imageview.image = #imageLiteral(resourceName: "User")
+        imageview.contentMode = UIView.ContentMode.scaleAspectFit
+        imageview.layer.cornerRadius = 20
+        imageview.layer.masksToBounds = true
+        containView.addSubview(imageview)
+        let rightBarButton = UIBarButtonItem(customView: containView)
+        self.navigationItem.rightBarButtonItem = rightBarButton
+        navigationItem.title = "Profile"
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func mobileNumberPressed(_ sender: UIButton) {
+        guard let number = URL(string: "tel://"+"+8008874447") else {
+            return
+        }
+        UIApplication.shared.open(number)
     }
-    */
-
+    @IBAction func logOutPressed(_ sender: UIButton) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
 }

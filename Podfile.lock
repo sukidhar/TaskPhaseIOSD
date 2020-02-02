@@ -1,0 +1,32 @@
+PODS:
+  - IQKeyboardManagerSwift (6.5.5)
+  - SkyFloatingLabelTextField (3.8.0)
+  - TKSubmitTransition (3.1.1)
+
+DEPENDENCIES:
+  - IQKeyboardManagerSwift
+  - SkyFloatingLabelTextField (~> 3.0)
+  - TKSubmitTransition (from `https://github.com/entotsu/TKSubmitTransition.git`)
+
+SPEC REPOS:
+  trunk:
+    - IQKeyboardManagerSwift
+    - SkyFloatingLabelTextField
+
+EXTERNAL SOURCES:
+  TKSubmitTransition:
+    :git: https://github.com/entotsu/TKSubmitTransition.git
+
+CHECKOUT OPTIONS:
+  TKSubmitTransition:
+    :commit: 1960d8e644c2dd3aa4585b6ed562f90ec8e13065
+    :git: https://github.com/entotsu/TKSubmitTransition.git
+
+SPEC CHECKSUMS:
+  IQKeyboardManagerSwift: 0fb93310284665245591f50f7a5e38de615960b7
+  SkyFloatingLabelTextField: 5a338412114808e961fe2d14ea2c5452c8b6e4aa
+  TKSubmitTransition: 644b99291e301a03227fdb9f5709d81e09f6ad18
+
+PODFILE CHECKSUM: 7db98b11d37a4d0a7a3a118cc8dd47a954cbeb35
+
+COCOAPODS: 1.8.4
